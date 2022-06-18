@@ -1,12 +1,37 @@
 <DOCTYPE html>
     <html>
         <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Bootstrap demo</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+            <style>
+                input[type='text'] { font-family: monospace; }
+                body {  
+                  border: 3px solid blue;  
+                  padding-left: 75px;
+                  padding-right: 75px;    
+                  background-color: #FFFFE0;
+                }
+                img {opacity: 0.5;}
+            </style>
         </head>
         <body>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Membership
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">weekly</a></li>
+                  <li><a class="dropdown-item" href="#">monthly</a></li>
+                  <li><a class="dropdown-item" href="#">yealry</a></li>
+                </ul>
+              </div>
             <h1 style="text-align:center;">Welcome to swimming club enrollment</h1>
             <p style="text-align:center;">we require you to fill up the below form so that we get started on your admissions to our <em>swimmng club</em></p>
             <hr>
-            <form action="">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+            <form action="" class = 'card p-3 bg-light' style="border:1px solid black" >
                 <fieldset>
                     <label>
                         1.Name:<input type="text" name="name" size="25" maxlength="100">
@@ -58,5 +83,11 @@
 
                 </fieldset>
             </form>
+            <div class="card" style="width: 18rem;">
+                <img src="./pool.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
         </body>
     </html>
